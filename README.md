@@ -1,64 +1,39 @@
-﻿# TRPL AI Capstone
+# To-Do List Project
 
-# 📝 To-Do List App  
+## Problem Statement
+Banyak pengguna kesulitan mengatur tugas harian mereka secara efisien karena metode manual atau aplikasi yang kompleks. Proyek ini bertujuan membuat aplikasi To-Do List sederhana, interaktif, dan mudah digunakan, sehingga membantu pengguna mengelola tugas secara lebih produktif. Dari sisi bisnis, aplikasi ini dapat meningkatkan engagement pengguna dan membuka peluang monetisasi melalui fitur premium.
 
-Aplikasi sederhana untuk mengelola daftar tugas harian. Pengguna bisa menambah, mengedit, menghapus, dan menandai status tugas agar lebih produktif.
+## Scope Awal
+**In-Scope:**
+- Pembuatan aplikasi To-Do List berbasis web.
+- Fitur CRUD (Create, Read, Update, Delete) tugas.
+- Kategori dan prioritas tugas.
+- Dashboard sederhana untuk menampilkan status tugas.
 
----
+**Out-of-Scope:**
+- Integrasi AI untuk prediksi tugas.
+- Sinkronisasi lintas perangkat.
+- Fitur kolaborasi tim.
 
-## 📌 Problem Statement & Nilai  
-Banyak orang kesulitan mengatur waktu dan tugas sehari-hari. Dengan To-Do List App, pengguna dapat melacak pekerjaan penting, menetapkan prioritas, dan menyelesaikan tugas tepat waktu.  
-**Nilai bisnis/pengguna**: meningkatkan produktivitas & efisiensi pribadi.
+## Metrik Evaluasi Awal
+- **Target:** Minimal 80% pengguna menyelesaikan tugas sesuai prioritas.
+- **Baseline:** Pengguna saat ini menggunakan catatan manual atau aplikasi lain tanpa prioritas.
 
----
+## Struktur Repository
+/trpl-todo-list
+│
+├─ README.md
+├─ notebooks/
+│ └─ exploratory_dummy.ipynb
+├─ src/
+├─ docs/
+└─ .gitignore
 
-## 📦 Scope  
-**In-Scope**  
-- CRUD (Create, Read, Update, Delete) tugas  
-- Fitur kategori, prioritas, deadline  
-- Status tugas (Pending, In-Progress, Completed)  
 
-**Out-of-Scope**  
-- Sinkronisasi multi-device  
-- Integrasi kalender eksternal (Google Calendar, Outlook)  
-- Kolaborasi tim (versi awal hanya untuk 1 user)
+## Issue Board (Contoh)
+- To Do: Desain UI, Setup repo Git, Buat notebook eksplorasi
+- In Progress: Implementasi CRUD
+- Done: Buat README.md, Buat struktur folder
 
----
-
-## 🎯 Metrik  
-- **Target awal**:  
-  - F1-score prediksi penyelesaian tugas ≥ 0.75 (jika ditambahkan model ML)  
-  - Latensi p95 ≤ 500ms untuk operasi CRUD  
-
----
-
-## 📊 Data  
-- **Sumber**: dataset dummy To-Do List (buatan sendiri, mirip dataset ringan di Kaggle)  
-- **Lisensi**: bebas digunakan untuk tujuan pembelajaran  
-- **Privasi**: data fiktif, tidak ada informasi pribadi  
-
-Contoh struktur dataset:
-| id | task              | category     | priority | status     | deadline    |
-|----|------------------|--------------|----------|------------|-------------|
-| 1  | Belajar GitHub    | Kuliah       | High     | Completed  | 2025-09-30  |
-| 2  | Beli bahan masak  | Pribadi      | Medium   | Pending    | 2025-10-01  |
-
----
-
-## 🏗️ Arsitektur  
----
-
-## 🗺️ Roadmap  
-| Minggu | Target |
-|--------|------------------------------|
-| 1 | Setup project, desain database sederhana |
-| 2 | Implementasi CRUD dasar |
-| 3 | Tambah fitur kategori, prioritas, deadline |
-| 4 | Testing, dokumentasi, finalisasi |
-
----
-
-## ⚖️ Etika: Risiko & Mitigasi  
-- **Risiko**: data pengguna bisa hilang jika tidak ada backup.  
-- **Mitigasi**: gunakan database dengan mekanisme backup & export CSV.  
-
+## Etika & Privasi
+Data pengguna bersifat pribadi (nama tugas, tanggal deadline). Risiko kebocoran mitigasi dengan: penyimpanan lokal sementara, enkripsi data saat dibutuhkan, dan akses terbatas. Pengguna diinformasikan tentang penggunaan data mereka secara jelas.
