@@ -1,14 +1,15 @@
 # To-Do List Project
 
 ## Problem Statement
-Banyak pengguna kesulitan mengatur tugas harian mereka secara efisien karena metode manual atau aplikasi yang kompleks. Proyek ini bertujuan membuat aplikasi To-Do List sederhana, interaktif, dan mudah digunakan, sehingga membantu pengguna mengelola tugas secara lebih produktif. Dari sisi bisnis, aplikasi ini dapat meningkatkan engagement pengguna dan membuka peluang monetisasi melalui fitur premium.
+Mahasiswa TRPL semester 4 di kampus Wilmar Bisnis Indonesia sering kesulitan mengatur tugas kuliah dan proyek karena metode manual atau aplikasi kompleks yang membingungkan. Aplikasi To-Do List ini bertujuan membantu mahasiswa mengelola tugas harian, menetapkan prioritas, dan memantau progress secara efisien. Dari sisi bisnis, aplikasi ini meningkatkan engagement pengguna dan membuka peluang fitur premium di masa depan.
 
 ## Scope Awal
 **In-Scope:**
 - Pembuatan aplikasi To-Do List berbasis web.
 - Fitur CRUD (Create, Read, Update, Delete) tugas.
-- Kategori dan prioritas tugas.
-- Dashboard sederhana untuk menampilkan status tugas.
+- Penentuan kategori dan prioritas tugas.
+- Dashboard sederhana menampilkan status tugas.
+- Notebook eksplorasi data dummy (`notebooks/exploratory_dummy.ipynb`).
 
 **Out-of-Scope:**
 - Integrasi AI untuk prediksi tugas.
@@ -16,8 +17,9 @@ Banyak pengguna kesulitan mengatur tugas harian mereka secara efisien karena met
 - Fitur kolaborasi tim.
 
 ## Metrik Evaluasi Awal
-- **Target:** Minimal 80% pengguna menyelesaikan tugas sesuai prioritas.
+- **Target:** Minimal 80% tugas diselesaikan sesuai prioritas.
 - **Baseline:** Pengguna saat ini menggunakan catatan manual atau aplikasi lain tanpa prioritas.
+- **SMART:** Spesifik (tugas mahasiswa TRPL), Measurable (80%), Achievable, Relevant, Time-bound (per semester).
 
 ## Struktur Repository
 /trpl-todo-list
@@ -27,13 +29,31 @@ Banyak pengguna kesulitan mengatur tugas harian mereka secara efisien karena met
 │ └─ exploratory_dummy.ipynb
 ├─ src/
 ├─ docs/
+├─ data/
+│ └─ todo_dummy.csv
 └─ .gitignore
 
 
-## Issue Board (Contoh)
-- To Do: Desain UI, Setup repo Git, Buat notebook eksplorasi
-- In Progress: Implementasi CRUD
-- Done: Buat README.md, Buat struktur folder
+## Issue Board (Minimal 5 Issue)
+**To Do:**
+1. Desain UI dashboard To-Do List
+2. Buat struktur folder repo
+3. Buat notebook eksplorasi data dummy
+4. Siapkan file data CSV dummy
+5. Tulis README awal
+
+**In Progress:**
+1. Implementasi fitur CRUD tugas
+2. Penentuan kategori dan prioritas tugas
+
+**Done:**
+1. Buat issue board
+2. Setup repo GitHub
+3. Struktur folder awal
 
 ## Etika & Privasi
-Data pengguna bersifat pribadi (nama tugas, tanggal deadline). Risiko kebocoran mitigasi dengan: penyimpanan lokal sementara, enkripsi data saat dibutuhkan, dan akses terbatas. Pengguna diinformasikan tentang penggunaan data mereka secara jelas.
+Data pengguna (nama tugas, kategori, tanggal deadline) bersifat pribadi. Risiko kebocoran mitigasi dengan:
+- Penyimpanan lokal sementara.
+- Enkripsi data saat diperlukan.
+- Akses terbatas.
+Pengguna diinformasikan secara jelas mengenai penggunaan data mereka.
